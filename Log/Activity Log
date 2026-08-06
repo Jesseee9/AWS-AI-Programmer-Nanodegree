@@ -1,0 +1,55 @@
+# AWS AI Programmer Nanodegree - Learning Log
+
+Documenting core concepts, practical code exercises, and key takeaways throughout the program.
+
+---
+
+## Module 1: Python & Machine Learning Fundamentals
+
+### 1. Hyperparameter Tuning & In-Place Operators
+* **Lab File:** `labs/01_hyperparameters.ipynb`
+* **Concepts:** Python assignment shortcuts (`*=`, `+=`, `-=`), Jupyter kernel state management.
+* **Key Takeaways:**
+  * Modified hyperparameter values using in-place assignment operators (e.g., updating `training_loss` and decaying `learning_rate`).
+  * Learned that Jupyter Notebooks hold variables in a sequential in-memory kernel. If execution fails or halts, preceding cells must be re-executed top-to-bottom to maintain state.
+
+### 2. Data Types: Discrete vs. Continuous
+* **Concepts:** Numerical typing (`int` vs `float`).
+* **Key Takeaways:**
+  * **`int` (Integer):** Used for discrete, countable entities (e.g., number of participants, count of caught fish).
+  * **`float` (Floating Point):** Used for continuous measurements with decimal precision (e.g., length in meters, elapsed time in hours).
+
+### 3. Exception Handling in Data Processing
+* **Lab File:** `labs/02_exception_handling.ipynb`
+* **Concepts:** Defensive programming, `try-except` blocks, runtime errors.
+* **Key Takeaways:**
+  * Handled division-by-zero risks in data functions using `except ZeroDivisionError:`.
+  * Proper exception handling prevents complete pipeline failure when processing invalid or unexpected data inputs.
+
+### 4. Comparison vs. Assignment Operators
+* **Concepts:** Python equality rules (`=` vs `==`).
+* **Key Takeaways:**
+  * `=` is strictly an assignment operator used to store values in variables.
+  * `==` is a comparison operator that evaluates equality and returns a boolean (`True` or `False`).
+
+### 5. Model Evaluation Metrics: Precision & Recall
+* **Lab File:** `labs/03_precision_recall_operators.ipynb`
+* **Concepts:** Evaluation metrics, True Positives (TP), False Positives (FP), False Negatives (FN), Boolean logic.
+* **Key Takeaways:**
+  * **Precision** ($\frac{TP}{TP + FP}$) measures accuracy among positive predictions.
+  * **Recall** ($\frac{TP}{TP + FN}$) measures the model's ability to identify all true positive instances.
+  * Used boolean comparisons (`>`) to programmatically evaluate and select superior model performance metrics.
+
+---
+
+## Template for Future Modules
+
+```markdown
+## Module X: [Module Title]
+
+### 1. [Exercise Title]
+* **Lab File:** `labs/XX_filename.ipynb`
+* **Concepts:** Concept 1, Concept 2
+* **Key Takeaways:**
+  * Takeaway 1
+  * Takeaway 2
