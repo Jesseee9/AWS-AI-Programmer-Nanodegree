@@ -1,0 +1,64 @@
+Pre-trained Image Classifier for Dog Breed Identification
+
+Date: 2026-08-13
+Platform / Environment: AWS AI & ML / Udacity AI Programming with Python curriculum
+Language: Python
+
+What I Did
+
+Completed a computer-vision project that uses pre-trained Convolutional Neural Network (CNN) architectures to classify images of pets.
+
+I worked with three pre-trained models:
+
+* VGG
+* ResNet
+* AlexNet
+
+The project evaluates the models based on their ability to identify dogs, classify dog breeds, and distinguish dogs from non-dog images.
+
+The project is divided into several Python modules, with check_images.py acting as the main pipeline that coordinates the classification and evaluation process.
+
+What I Learned
+
+This project gave me practical experience working with an existing machine-learning pipeline rather than building a neural network from scratch.
+
+Key areas I practised included:
+
+* Using pre-trained CNN models for image classification.
+* Working with transfer learning concepts and ImageNet-trained models.
+* Parsing image filenames to extract ground-truth labels.
+* Using Python dictionaries and lists to organise classification data.
+* Using argparse to accept command-line arguments.
+* Splitting a larger program into separate Python modules with specific responsibilities.
+* Comparing model accuracy and execution time.
+* Generating statistical results to evaluate classification performance.
+
+Project Pipeline
+
+The application follows this general process:
+
+1. Parse command-line arguments for the image directory, CNN architecture and dog-name reference file.
+2. Extract ground-truth pet labels from image filenames.
+3. Run images through the selected pre-trained CNN.
+4. Compare the predicted labels against the known labels.
+5. Determine whether the actual and predicted labels represent dogs or non-dogs.
+6. Calculate classification statistics.
+7. Print the results and identify misclassifications.
+
+Key Takeaways
+
+One of the main things I took from this project was how much work surrounds a machine-learning model itself.
+
+The CNN performs the classification, but the overall application also needs input handling, data preparation, label processing, evaluation and reporting.
+
+I also saw the trade-off between model performance and execution time when comparing different pre-trained architectures.
+
+Practical Relevance
+
+This project helped me practise Python in a more structured application rather than only working with isolated exercises.
+
+It also introduced me to practical computer-vision workflows and showed how pre-trained models can be incorporated into applications without training a neural network from scratch.
+
+Next Step
+
+Continue building Python projects that apply programming concepts to practical IT and technology problems, while strengthening my understanding of how machine-learning models are used within applications.
