@@ -1,0 +1,85 @@
+Neural Networks — Forward Propagation, Backpropagation and Gradient Descent
+
+Date: 2026-08-15
+Platform / Environment: AWS AI & ML Scholars / Udacity
+Module: Neural Networks
+Language / Tools: Python, NumPy, Pandas
+
+What I Did
+
+Completed the Neural Networks module, combining theoretical concepts with Python coding exercises and notebook implementations.
+
+I worked with the mathematics and code behind neural-network training, including activation functions, probability outputs, error calculations, gradients, weight updates and backpropagation.
+
+I also completed an end-to-end notebook using student data to prepare data and train a neural-network model.
+
+What I Learned
+
+Sigmoid
+
+I worked with the sigmoid function and its relationship to binary classification probabilities.
+
+I also practised evaluating linear boundary equations to identify points where the sigmoid output represents a 0.5 probability.
+
+Softmax
+
+Implemented the Softmax function using NumPy:
+
+np.exp(x) / np.sum(np.exp(x))
+
+This converts a set of raw model outputs into normalized probabilities that sum to 1.
+
+Error and Cross-Entropy
+
+I practised calculating prediction error using cross-entropy-based loss functions.
+
+This helped connect the predicted probabilities produced by a model with the error that is used during training.
+
+Gradient Descent
+
+Implemented the main components of a gradient-descent training process, including:
+
+* sigmoid()
+* output_formula()
+* error_formula()
+* update_weights()
+
+The weights and biases are repeatedly adjusted based on the calculated error and gradients.
+
+I also reinforced how the size of a gradient affects the size of a weight update: larger gradients generally produce larger adjustments, while smaller gradients result in finer changes.
+
+Multi-Class Classification
+
+I learned how the number of output nodes relates to the number of classes in a classification problem.
+
+For example, an alphabet classification problem could use 26 output nodes to represent the 26 possible letters.
+
+Student Data Neural Network
+
+I completed an end-to-end notebook using student data.
+
+The process included:
+
+* One-hot encoding categorical variables with pd.get_dummies().
+* Normalising continuous features such as GRE and GPA.
+* Preparing the data for model training.
+* Implementing backpropagation error terms.
+* Running training iterations to update the model.
+
+Key Takeaways
+
+The most useful part of this module was connecting the mathematics to the code.
+
+Rather than only using a machine-learning library to train a model, I practised implementing important pieces of the training process myself.
+
+I now have a clearer understanding of how predictions produce errors, how those errors produce gradients, and how gradients are used to update weights during training.
+
+Practical Relevance
+
+This provides a foundation for understanding what happens inside neural-network training and makes it easier to reason about machine-learning code that uses higher-level frameworks.
+
+It also builds on the Python and machine-learning concepts from my first AWS AI & ML Scholars project.
+
+Next Step
+
+Continue to the next part of the AWS AI & ML Scholars programme and keep reinforcing these neural-network concepts through practical coding rather than relying only on the theory.
