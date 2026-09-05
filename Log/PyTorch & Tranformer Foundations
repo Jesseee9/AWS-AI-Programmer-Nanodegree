@@ -1,0 +1,52 @@
+Neural Networks in PyTorch & Transformer Foundations
+
+Date: September 5, 2026
+Platform / Environment: AWS AI & ML Scholars / Udacity Nanodegree — PyTorch
+
+What I Did
+
+Completed a section of my Nanodegree covering neural networks in PyTorch, data processing for language models, attention mechanisms, training and validation, and LLM architectures.
+
+I worked through:
+
+* Building multi-layer neural networks using PyTorch tensors and nn.Module.
+* Using Sigmoid and ReLU activations and understanding logits and Softmax outputs.
+* Creating a custom PyTorch Dataset for tokenised text sequences.
+* Using DataLoader and RandomSampler for batched training data.
+* Learning the roles of Query, Key and Value in self-attention.
+* Reviewing Transformer components including multi-head attention, layer normalisation, residual connections and feedforward layers.
+* Creating training and validation pipelines.
+* Implementing a PyTorch training loop with forward propagation, cross-entropy loss, backpropagation and optimizer updates.
+* Comparing the development and scaling of GPT-1, GPT-2 and GPT-3.
+* Reviewing Decoder-Only, Encoder-Decoder and Encoder-Only Transformer architectures.
+
+What I Learned
+
+One of the biggest lessons was seeing how the different parts of a neural-network training process connect.
+
+A simplified view is:
+
+Input → Model → Prediction → Loss → Backpropagation → Weight Update → Repeat
+
+I also developed a better understanding of how text can be converted into token IDs and organised into input/target sequences for language-model training.
+
+The attention section helped me understand that Transformers use Query, Key and Value representations to determine which parts of the input should receive more attention.
+
+Key Takeaways
+
+* PyTorch provides building blocks for constructing and training neural networks.
+* Dataset and DataLoader help organise and feed training data to a model.
+* Validation loss provides a way to evaluate how the model performs on data separate from its training data.
+* Self-attention is a core mechanism behind Transformer models.
+* Transformer architectures can be designed differently depending on the task.
+* GPT-style models use a Decoder-Only architecture designed for autoregressive text generation.
+
+Practical Relevance
+
+This gave me a stronger foundation for understanding how modern language models are structured and trained, rather than treating LLMs as a black box.
+
+It also gave me practical experience with PyTorch code and the basic components that appear in machine-learning training pipelines.
+
+Next Step
+
+Continue applying these concepts in the Nanodegree projects and practise building and training small PyTorch models so that I become more comfortable with the code rather than only understanding the theory.
