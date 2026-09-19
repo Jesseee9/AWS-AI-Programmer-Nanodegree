@@ -1,0 +1,71 @@
+Custom Transformer for Sentiment Analysis — IMDB
+
+Date: September 19, 2026
+Platform / Environment: AWS Future AI Programmer Nanodegree — PyTorch
+
+What I Did
+
+Completed the final project in the AWS Future AI Programmer Nanodegree.
+
+I built and trained a custom PyTorch Transformer from scratch for binary sentiment classification using the IMDB movie review dataset.
+
+The project adapted a causal Transformer architecture for classification by allowing tokens to attend to the full sequence rather than restricting attention to previous tokens.
+
+Model Architecture
+
+The model included:
+
+* Subword tokenisation using bert-base-uncased
+* Token and positional embeddings
+* Bidirectional self-attention without causal masking
+* Stacked Transformer blocks
+* Layer normalisation
+* Global average pooling using x.mean(dim=1)
+* A classification head for positive/negative sentiment
+
+Instead of using a dedicated [CLS] token, global average pooling was used to produce a single representation of the sequence.
+
+Training
+
+The model was trained for 6 epochs using:
+
+* AdamW optimiser
+* Cross-Entropy loss
+* PyTorch
+* IMDB movie review dataset
+
+Results
+
+* Final test accuracy: 76.02%
+* Final validation accuracy: 78.40%
+* Project target: >75% test accuracy
+
+The final test accuracy exceeded the project’s required target.
+
+What I Learned
+
+This project helped me connect several concepts I had previously studied separately.
+
+I now have practical experience with the basic structure of a Transformer model, including embeddings, self-attention, Transformer blocks, normalisation and classification.
+
+One particularly useful concept was understanding the difference between causal and bidirectional attention. A causal language model restricts each token from attending to future tokens, whereas this classification model was designed so tokens could use information from the full review.
+
+I also learned how global average pooling can turn a sequence of token representations into a single representation that can be passed to a classification head.
+
+Key Takeaway
+
+Building the Transformer myself made the architecture much less abstract.
+
+Rather than only learning that Transformers contain attention and feedforward layers, I had to work with those components as part of an actual training pipeline and evaluate whether the resulting model met the required target.
+
+Practical Relevance
+
+This project gives me a concrete example of applying PyTorch and Transformer concepts to a real NLP classification task.
+
+It also gives me a foundation for understanding how more advanced Transformer-based models are constructed and adapted for different tasks.
+
+Next Step
+
+The AWS Future AI Programmer Nanodegree is now complete.
+
+My next step is to continue practising the concepts from the programme through additional projects and applications rather than treating completion of the Nanodegree as mastery of AI or Transformers.
